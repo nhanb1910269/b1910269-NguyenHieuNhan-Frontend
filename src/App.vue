@@ -1,15 +1,23 @@
 <script>
+import AppHeader from "@/components/AppHeader.vue";
 export default {
-
-}
+  components: {
+    AppHeader,
+  },
+};
 </script>
 <template>
-  <h1>I am not in danger, Skyler. I am the danger. A guy opens his door and gets shot and you think that of me? NO. I am
-    the one who knocks</h1>
+  <div id="app">
+    <AppHeader />
+    <div class="container mt-3">
+      <router-view />
+    </div>
+  </div>
 </template>
 <style>
 .page {
   max-width: 400px;
   margin: auto;
 }
+
 </style>
